@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Halaman ini akan hilang setelah di hitung</h2>
+    <input type="number" name="bil1" id="bil1">
+    <input type="number" name="bil2" id="bil2">
+    <button name="hitung" id="hitung">Hitung</button>
+
+    <script>
+        $("#hitung").on("click", function(){
+            // ini berfungsi buat nyembunyiin body setelah dihitung
+            // dengan teknik callback
+            $("body").hide("slow", function(){
+                let bil1 = $("#bil1").val()
+                let bil2 = $("#bil2").val()
+                let hasil = parseInt(bil1) + parseInt(bil2)
+                alert("Hasil "+hasil) 
+            });
+        })
+    </script>
+</body>
+</html>
