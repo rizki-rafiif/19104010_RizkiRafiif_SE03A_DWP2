@@ -110,6 +110,6 @@ class StudentController extends Controller
                     ->rawColumns(['action'])
                     ->make(true);
         }
-        return view('student');
+        return view('student_data');
     }
 }
