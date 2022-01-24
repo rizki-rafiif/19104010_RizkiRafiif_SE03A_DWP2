@@ -33,7 +33,7 @@
             processing : true,
             serverSide : true,
             ajax : "{{ route('student.data') }}",
-            column : [
+            columns : [
                 {
                     data : 'DT_RowIndex',
                     name : 'DT_RowIndex',
