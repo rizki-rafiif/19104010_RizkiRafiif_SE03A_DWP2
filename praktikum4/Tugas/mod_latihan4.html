@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .heading{
+            color: #f00;
+            font-size: 30px;
+        }
+        .heading2{
+            color: aqua;
+            font-size: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <br>
+    <h2>Heading 2</h2>
+    <button id="ganti">Ganti</button>
+
+
+    <script>
+        // slide up dan slide down agar ketika di click akan bergerak ke atas dan bawah
+        $("#ganti").on("click", function(){
+            $("h1").addClass("heading").slideUp(2000).slideDown(2000)
+            $("h2").addClass("heading2").slideUp(2000).slideDown(2000)
+        })
+    </script>
+</body>
+</html>
