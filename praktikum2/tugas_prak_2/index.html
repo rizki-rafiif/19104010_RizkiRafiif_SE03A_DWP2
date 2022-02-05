@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>form HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+    <h1 class="judul_page">Data diri</h1>
+
+    <table class="tabel">
+        <tr>
+            <td>Nama</td>
+            <td> : </td>
+            <td><input type="text" name="nama"></td>
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td> : </td>
+            <td><input type="text" name="nim"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td> : </td>
+            <td><input type="password" name="password" size="11" maxlength="9"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td> : </td>
+            <td><input type="radio" name="gender" value="L">Pria
+                <input type="radio" name="gender2" value="P">Wanita</td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td> : </td>
+            <td><input type="checkbox" name="hobi1" value="nonton">nonton
+                <input type="checkbox" name="hobi1" value="ngegame">game
+                <input type="checkbox" name="hobi1" value="olahraga">olahraga</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form>
+                    <input type="submit" value="kirim" name="Submit">
+                    <input type="reset" value="ulang" name="Reste">
+                    <input type="button" value="batal" name="Cancel">
+                    <img class="image_illust" src="image/3327590.jpg" alt="">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <textarea name="desk" cols="45" rows="5">Tuliskan deskripsi singkat tentang anda
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Silahkan pilih orientasi minat
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <select name="orientasi-minat">
+                    <option value="dg">Desain Grafis</option>
+                    <option value="wp">Web Programmer</option>
+                    <option value="da">Data Analis</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <select name="orientasi-kemampuan">
+                    <option value="dg">Desain Grafis</option>
+                    <option value="wp">Web Programmer</option>
+                    <option value="da">Data Analis</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <div class="animation"></div>
+</body>
+</html>

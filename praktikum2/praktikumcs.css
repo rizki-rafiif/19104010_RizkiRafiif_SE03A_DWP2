@@ -1,0 +1,10 @@
+.tb{
+    border-collapse: collapse;
+    width: 200px;
+}
+.tb tr:nth-child(odd){
+    background-color: rgb(0, 102, 255);
+}
+.tb tr:nth-child(even){
+    background-color: rgb(249, 255, 161);
+}
